@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Repositories
 {
-    internal interface Interface1
+    public interface Interface1
     {
     }
 }

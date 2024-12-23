@@ -6,35 +6,50 @@ namespace TaxiStation.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CutomerController : ControllerBase
+    public class CustomerController : ControllerBase
     {
-        // GET: api/<CutomerController>
+
+        private readonly IDataContext _context;
+
+        public CustomerController(IDataContext context)
+        {
+            _context = context;
+        }
+
+
+
+        // GET: api/<Customers>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Customer> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.Customers;
         }
 
-        // GET api/<CutomerController>/5
+        // GET api/<Customers>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult Get(int id)
         {
-            return "value";
+            var customer = _context.Customers.Find(customer => customer.Id == id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return Ok(customer);
         }
 
-        // POST api/<CutomerController>
+        // POST api/<Customers>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<CutomerController>/5
+        // PUT api/<Customers>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<CutomerController>/5
+        // DELETE api/<Customers>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

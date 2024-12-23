@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Data.Repositories
 {
-    internal class CustomerRepository
+    public class CustomerRepository
     {
     }
 }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaxiStation.Core
 
 namespace TaxiStation.Data.Repositories
 {
-    internal class AdminRepository
+    public class AdminRepository: IAdminReposiypry
     {
     }
 }

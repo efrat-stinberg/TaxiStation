@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Repositories
 {
-    internal interface IAdminRepository
+    public interface IAdminRepository
     {
+        public Admin(int id, string name, List<Driver> drivers)
+        {
+            Id = id;
+            Name = name;
+            Drivers = drivers;
+        }
+
+
+
     }
 }

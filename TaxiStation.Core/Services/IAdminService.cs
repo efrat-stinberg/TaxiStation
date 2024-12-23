@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Services
 {
-    internal interface IAdminService
+    
+    interface IAdminService
     {
     }
 }

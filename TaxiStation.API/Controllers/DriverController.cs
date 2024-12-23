@@ -4,40 +4,60 @@
 
 namespace TaxiStation.API.Controllers
 {
-    [Route("api/[controller]")]
+   {
+     [Route("api/[controller]")]
     [ApiController]
     public class DriverController : ControllerBase
     {
-        // GET: api/<DriverController>
+
+        private readonly IDataContext _context;
+
+
+        public DriverController(IDataContext context)
+        {
+            _context = context;
+        }
+
+
+        // GET: api/<StudentsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Driver> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.Drivers;
         }
 
-        // GET api/<DriverController>/5
+        // GET api/<StudentsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult Get(int id)
         {
-            return "value";
+            var driver = _context.Drivers.Find(driver => driver.Id == id);
+            if (driver == null)
+            {
+                return NotFound();
+            }
+            return Ok(driver);
         }
 
-        // POST api/<DriverController>
+
+        // POST api/<StudentsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(int id, string name, string city)
         {
+            _context.Drivers.Add(new Driver(id, name, city));
         }
 
-        // PUT api/<DriverController>/5
+        // PUT api/<StudentsController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, string name)
         {
+            _context.Drivers.Find(student => student.Id == id).Name = name;
         }
 
-        // DELETE api/<DriverController>/5
+        // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _context.Drivers.RemoveAll(student => student.Id == id);
         }
     }
 }

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Entities
 {
-    internal class Admin
+    public class Admin
     {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Phone { get; set; }
+
+        public List<Driver> Drivers { get; set; }
     }
 }

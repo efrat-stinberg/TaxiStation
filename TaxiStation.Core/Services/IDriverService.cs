@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Services
 {
-    internal interface IDriverService
+    public interface IDriverService
     {
     }
 }
