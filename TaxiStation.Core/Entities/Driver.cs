@@ -12,6 +12,8 @@ namespace TaxiStation.Core.Entities
 
         public string Name { get; set; }
 
+        public int Phone { get; set; }
+
         public string City { get; set; }
 
         public string CurrentPlace { get; set; }

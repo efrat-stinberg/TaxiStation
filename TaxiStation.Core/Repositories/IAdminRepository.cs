@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaxiStation.Core.Entities;
 
 namespace TaxiStation.Core.Repositories
 {
     public interface IAdminRepository
     {
-        public Admin(int id, string name, List<Driver> drivers)
-        {
-            Id = id;
-            Name = name;
-            Drivers = drivers;
-        }
+        Admin? GetById(int id);
 
+        Admin Add(Admin admin);
 
+        Admin Update(Admin admin);
+
+        void Delete(int id);
 
     }
 }
+
+

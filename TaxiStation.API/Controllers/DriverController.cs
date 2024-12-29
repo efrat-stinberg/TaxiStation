@@ -4,7 +4,7 @@
 
 namespace TaxiStation.API.Controllers
 {
-   {
+   
      [Route("api/[controller]")]
     [ApiController]
     public class DriverController : ControllerBase

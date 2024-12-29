@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "TaxiStation.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TaxiStation.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaxiStation.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TaxiStation.Core/1.0.0": {
+      "type": "project",
+      "path": "../TaxiStation.Core/TaxiStation.Core.csproj",
+      "msbuildProject": "../TaxiStation.Core/TaxiStation.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "TaxiStation.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\USER\\Desktop\\.Net core\\TaxiStation\\TaxiStation.Core\\TaxiStation.Core.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\.Net core\\TaxiStation\\TaxiStation.Core\\TaxiStation.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

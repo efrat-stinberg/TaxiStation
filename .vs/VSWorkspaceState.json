@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\TaxiStation.API",
+    "\\TaxiStation.API\\Controllers",
+    "\\TaxiStation.service\\bin"
+  ],
+  "SelectedNode": "\\TaxiStation.API\\Controllers\\DriverController.cs",
+  "PreviewInSolutionExplorer": false
+}

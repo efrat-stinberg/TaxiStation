@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.Data\obj\Debug\net6.0\TaxiStation.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.Data\obj\Debug\net6.0\TaxiStation.Data.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.Data\obj\Debug\net6.0\TaxiStation.Data.AssemblyInfo.cs
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.Data\obj\Debug\net6.0\TaxiStation.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.Data\obj\Debug\net6.0\TaxiStation.Data.csproj.AssemblyReference.cache

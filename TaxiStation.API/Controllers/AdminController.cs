@@ -1,4 +1,4 @@
-﻿
+﻿using TaxiStation.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,6 +9,12 @@ namespace TaxiStation.API.Controllers
     [ApiController]
     public class AdminController : ControllerBase
     {
+        private readonly IAdminService _adminService;
+
+        public AdminController(IAdminService adminService)
+        {
+            _adminService = adminService;
+        }
         // GET: api/<AdminController>
         [HttpGet]
         public IEnumerable<string> Get()

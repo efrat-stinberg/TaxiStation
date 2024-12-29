@@ -1,0 +1,11 @@
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\bin\Debug\net6.0\TaxiStation.service.deps.json
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\bin\Debug\net6.0\TaxiStation.service.dll
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\bin\Debug\net6.0\TaxiStation.service.pdb
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.AssemblyInfo.cs
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.dll
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\refint\TaxiStation.service.dll
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\TaxiStation.service.pdb
+C:\Users\USER\Desktop\.Net core\TaxiStation\TaxiStation.service\obj\Debug\net6.0\ref\TaxiStation.service.dll

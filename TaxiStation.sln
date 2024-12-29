@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiStation.API", "TaxiStation.API\TaxiStation.API.csproj", "{3EF668A9-D190-4EA4-B77B-397110B0C4A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiStation.API", "TaxiStation.API\TaxiStation.API.csproj", "{3EF668A9-D190-4EA4-B77B-397110B0C4A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{260A4731-3318-478C-8BA3-5DBBCE87976A} = {260A4731-3318-478C-8BA3-5DBBCE87976A}
+		{37C4F442-8850-43A7-A93E-85DC433C69A5} = {37C4F442-8850-43A7-A93E-85DC433C69A5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiStation.Core", "TaxiStation.Core\TaxiStation.Core.csproj", "{A1F97343-899A-4710-9179-85ED2ECAA773}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiStation.Data", "TaxiStation.Data\TaxiStation.Data.csproj", "{37C4F442-8850-43A7-A93E-85DC433C69A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxiStation.service", "TaxiStation.service\TaxiStation.service.csproj", "{260A4731-3318-478C-8BA3-5DBBCE87976A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,18 @@ Global
 		{3EF668A9-D190-4EA4-B77B-397110B0C4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EF668A9-D190-4EA4-B77B-397110B0C4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EF668A9-D190-4EA4-B77B-397110B0C4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F97343-899A-4710-9179-85ED2ECAA773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F97343-899A-4710-9179-85ED2ECAA773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F97343-899A-4710-9179-85ED2ECAA773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F97343-899A-4710-9179-85ED2ECAA773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C4F442-8850-43A7-A93E-85DC433C69A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C4F442-8850-43A7-A93E-85DC433C69A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C4F442-8850-43A7-A93E-85DC433C69A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C4F442-8850-43A7-A93E-85DC433C69A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260A4731-3318-478C-8BA3-5DBBCE87976A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260A4731-3318-478C-8BA3-5DBBCE87976A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260A4731-3318-478C-8BA3-5DBBCE87976A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260A4731-3318-478C-8BA3-5DBBCE87976A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

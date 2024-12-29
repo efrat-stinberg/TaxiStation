@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TaxiStation.Core.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,10 +12,7 @@ namespace TaxiStation.API.Controllers
 
         private readonly IDataContext _context;
 
-        public CustomerController(IDataContext context)
-        {
-            _context = context;
-        }
+        public CustomerController(IDataContext context) => _context = context;
 
 
 

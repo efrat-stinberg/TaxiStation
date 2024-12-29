@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "TaxiStation.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TaxiStation.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaxiStation.Core.dll": {}
+        }
       }
     }
   },
@@ -429,11 +439,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "TaxiStation.Core/1.0.0": {
+      "type": "project",
+      "path": "../TaxiStation.Core/TaxiStation.Core.csproj",
+      "msbuildProject": "../TaxiStation.Core/TaxiStation.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "TaxiStation.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -467,7 +483,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\USER\\Desktop\\.Net core\\TaxiStation\\TaxiStation.Core\\TaxiStation.Core.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\.Net core\\TaxiStation\\TaxiStation.Core\\TaxiStation.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
